@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Site en maintenance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f6f8;
+      font-family: 'Raleway', sans-serif;
+      background: #f9f9f9;
       color: #333;
       display: flex;
       justify-content: center;
@@ -20,62 +21,30 @@
     .container {
       max-width: 600px;
       padding: 30px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     h1 {
       font-size: 2em;
-      margin-bottom: 12px;
-      color: #7a4f09; /* couleur plus « dorée » */
+      margin-bottom: 15px;
+      font-weight: 600;
     }
     p {
-      font-size: 1.05em;
-      margin-bottom: 18px;
-    }
-    .loader {
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #c69c1e; /* doré */
-      border-radius: 50%;
-      width: 56px;
-      height: 56px;
-      margin: 0 auto 18px;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .wheat {
-      font-size: 3rem;
-      display: inline-block;
-      line-height: 1;
-      margin-bottom: 12px;
+      font-size: 1.1em;
+      font-weight: 400;
+      color: #555;
     }
     footer {
-      margin-top: 14px;
+      margin-top: 25px;
       font-size: 0.9em;
-      color: #666;
-    }
-
-    /* Responsive */
-    @media (max-width: 480px) {
-      .container { padding: 20px; border-radius: 12px; }
-      h1 { font-size: 1.6em; }
-      .wheat { font-size: 2.4rem; }
+      color: #888;
     }
   </style>
 </head>
 <body>
   <div class="container" role="main" aria-labelledby="titre-maintenance">
-    <div class="wheat" aria-hidden="true">🌾🌾</div>
-    <div class="loader" aria-hidden="true"></div>
-    <h1 id="titre-maintenance">🌾 Site en maintenance 🌾</h1>
-    <p>
-      Notre site est actuellement en cours de mise à jour.<br/>
-      Merci de revenir un peu plus tard.
-    </p>
-    <footer>&copy; 2025 - Boursagri</footer>
+    <h1 id="titre-maintenance">Site en maintenance</h1>
+    <p>Notre site est momentanément indisponible pour cause de mise à jour.<br>
+    Merci de revenir un peu plus tard.</p>
+    <footer>&copy; 2025 - Boursagri&reg;</footer>
   </div>
 </body>
 </html>
